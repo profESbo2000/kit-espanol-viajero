@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kit de español para viajar</title>
+<style>
+:root{--bg:#F5F6FA;--card:#fff;--ink:#1A1F3A;--mute:#5F6684;--line:#E3E5EF;--chip:#E9EBF5;--shadow:0 1px 2px rgba(26,31,58,.06);
+--hero1:#1A1F3A;--hero2:#2B3A8C;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1226;--card:#191D3A;--ink:#F1F2FA;--mute:#A3A9C8;--line:#2A2F55;--chip:#232848;--shadow:none;--hero1:#171B3D;--hero2:#2B3A8C}}
+:root[data-theme="dark"]{--bg:#0F1226;--card:#191D3A;--ink:#F1F2FA;--mute:#A3A9C8;--line:#2A2F55;--chip:#232848;--shadow:none;--hero1:#171B3D;--hero2:#2B3A8C}
+*{box-sizing:border-box}
+html{scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Figtree","Segoe UI",system-ui,sans-serif;line-height:1.4;-webkit-tap-highlight-color:transparent}
+h1,h2{font-family:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;margin:0}
+.wrap{max-width:640px;margin:0 auto;padding:0 16px 48px}
+header{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;padding:28px 16px 22px}
+header .in{max-width:640px;margin:0 auto}
+header h1{font-size:2.1rem;line-height:1.05;font-weight:800;letter-spacing:-.02em}
+header p{margin:8px 0 0;opacity:.85;font-size:.95rem;max-width:34ch}
+.stripe{display:flex;height:6px}.stripe i{flex:1}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:12px 0 8px;border-bottom:1px solid var(--line)}
+.search-row{display:flex;gap:8px;align-items:center}
+.search{flex:1;padding:13px 16px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:1rem}
+.speed-btn{flex:none;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:700;font-size:.9rem;padding:12px 14px;border-radius:14px;cursor:pointer;white-space:nowrap;box-shadow:var(--shadow)}
+.speed-btn:active{transform:scale(.97)}
+.search:focus,.chip:focus-visible,.ph:focus-visible,.speed-btn:focus-visible{outline:3px solid #6C7BFF;outline-offset:2px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0 8px;scrollbar-width:thin;scrollbar-color:var(--mute) transparent}
+.chips::-webkit-scrollbar{height:6px}
+.chips::-webkit-scrollbar-track{background:transparent}
+.chips::-webkit-scrollbar-thumb{background:var(--mute);border-radius:10px;opacity:.5}
+.chip{flex:none;border:0;background:var(--chip);color:var(--ink);font:inherit;font-weight:600;font-size:.9rem;padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.chip[aria-pressed="true"]{background:var(--c,#1A1F3A);color:#fff}
+section{margin-top:26px}
+section h2{font-size:1.35rem;display:flex;align-items:center;gap:10px;margin-bottom:10px}
+section h2 .dot{width:34px;height:34px;border-radius:10px;background:var(--c);display:grid;place-items:center;font-size:1.1rem;flex:none}
+.ph{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--card);color:var(--ink);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:12px;padding:12px 14px;margin-bottom:8px;font:inherit;cursor:pointer;box-shadow:var(--shadow)}
+.ph:active{transform:scale(.99)}
+.ph .t{flex:1}
+.es{display:block;font-weight:700;font-size:1.06rem}
+.en{display:block;color:var(--mute);font-size:.88rem;margin-top:2px}
+.ph svg{flex:none;width:22px;height:22px;fill:none;stroke:var(--c);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ph.on{background:var(--chip)}
+.note{background:var(--card);border:1px dashed var(--c);border-radius:12px;padding:12px 14px;margin:0 0 10px;font-size:.92rem}
+.note b{color:var(--ink)}
+.empty{text-align:center;color:var(--mute);padding:40px 0}
+.tip{margin-top:30px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.tip h2{font-size:1.15rem;margin-bottom:8px}.tip ol{margin:0;padding-left:20px}.tip li{margin:6px 0}
+.foot{text-align:center;color:var(--mute);font-size:.85rem;margin-top:22px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="in">
+<h1>Kit de español<br>para viajar</h1>
+<p>Sudamérica y México, para dos. Toca una frase para escucharla.</p>
+</div></header>
+<div class="stripe"><i style="background:#0E9AA7"></i><i style="background:#F2A900"></i><i style="background:#D6336C"></i><i style="background:#3D5AFE"></i><i style="background:#2E9E6B"></i><i style="background:#E8590C"></i></div>
+<div class="wrap">
+<div class="bar">
+<div class="search-row">
+<input class="search" id="q" type="search" placeholder="Buscar: baño, taxi, cuenta…" aria-label="Buscar frases" autocomplete="off">
+<button class="speed-btn" id="speedBtn" title="Cambiar velocidad">⚡ 1.0x</button>
+</div>
+<div class="chips" id="chips"></div>
+</div>
+<main id="list"></main>
+<div class="tip"><h2>Consejos del profesor</h2><ol>
+<li>Empieza siempre con <b>Hola</b> o <b>Buenos días</b>.</li>
+<li>Usa <b>usted</b> con personas mayores y en tiendas; <b>tú</b> con gente joven.</li>
+<li>Si no entiendes, no digas "sí": di <b>¿Puede repetir, por favor?</b></li>
+<li>Para precios, muestra el número en tu teléfono.</li>
+<li>Un español imperfecto, dicho con una sonrisa, abre muchas puertas.</li></ol></div>
+<p class="foot">Todo en presente. ¡Buen viaje! 🌎</p>
+</div>
+<script>
+const D=[
+{id:"basico",n:"Lo básico",e:"👋",c:"#0E9AA7",p:[
+["Hola / Buenos días / Buenas tardes / Buenas noches","Hello / Good morning / afternoon / evening","hola.mp3"],
+["Por favor","Please","por favor.mp3"],
+["Gracias","Thank you","gracias.mp3"],
+["De nada","You're welcome","de nada.mp3"],
+["Con permiso","Excuse me (to pass by)","con permiso.mp3"],
+["Perdón","Sorry","perdon.mp3"],
+["No entiendo.","I don't understand.","no entiendo.mp3"],
+["Hablo un poco de español.","I speak a little Spanish.","hablo un poco de español.mp3"],
+["¿Habla inglés?","Do you speak English?","Hablas inglés.mp3"],
+["Más despacio, por favor.","Slower, please.","mas despacio por favor.mp3"],
+["¿Puede repetir, por favor?","Can you repeat, please?","puede repetir, por favor.mp3"],
+["¿Cómo se dice esto en español?","How do you say this in Spanish?","como se dice esto en español.mp3"]]},
+{id:"nosotros",n:"Nosotros",e:"💑",c:"#D6336C",note:"<b>Género:</b> él dice <b>cansado</b>, <b>contento</b>, <b>perdido</b>. Ella dice <b>cansada</b>, <b>contenta</b>, <b>perdida</b>. Los dos juntos: <b>cansados</b>.",p:[
+["Me llamo ___ y ella se llama ___.","I'm ___ and her name is ___.\n","me llamo y ella se llama.mp3"],
+["Ella es mi novia.","She's my girlfriend.","ella es mi novia.mp3"],
+["Somos de ___.","We are from ___.\n","somos de .mp3"],
+["Somos turistas.","We are tourists.","somos turistas.mp3"],
+["Estoy aquí de vacaciones.","I'm here on vacation.","estoy aquí de vaciones.mp3"],
+["Mucho gusto.","Nice to meet you.","mucho gusto.mp3"],
+["¿Cómo estás? / ¿Cómo está?","How are you? (tú / usted)","como estas, como esta.mp3"],
+["Estoy bien, ¿y tú?","I'm fine, and you?","estoy bien y tu.mp3"],
+["Estoy cansado. / Estoy cansada.","I'm tired. (he / she)","estoy cansado, cansada.mp3"],
+["Estamos contentos.","We are happy.","estamos contentos.mp3"]]},
+{id:"dinero",n:"Números y dinero",e:"💵",c:"#F2A900",p:[
+["Somos dos.","There are two of us.","somos 2.mp3"],
+["Dos boletos, por favor.","Two tickets, please.","2 boletos por favor.mp3"],
+["¿Cuánto cuesta?","How much does it cost?","cuanto cuesta.mp3"],
+["Cuesta cincuenta.","It costs fifty.","cuesta 50.mp3"],
+["Es muy caro. / Es barato.","It's very expensive / cheap.","es muy caro es barato.mp3"],
+["¿Tiene algo más barato?","Do you have something cheaper?","tiene algo mas barato.mp3"],
+["¿Hay descuento?","Is there a discount?","hay descuento.mp3"],
+["¿Hay un cajero automático aquí?","Is there an ATM here?","hay un cajero autmatico aquii.mp3"],
+["Pago en efectivo. / Pago con tarjeta.","I pay cash / by card.","pago en efectivo pago con tarjeta.mp3"],
+["¿Aceptan tarjeta?","Do you accept cards?","aceptan tarjeta.mp3"]]},
+{id:"transporte",n:"Transporte",e:"🚌",c:"#3D5AFE",p:[
+["¿Dónde está la estación de autobuses?","Where is the bus station?","donde esta la estacion de autobuses.mp3"],
+["Quiero ir a ___.","I want to go to ___.\n","quiero ir.mp3"],
+["¿Cuánto cuesta el boleto a ___?","How much is the ticket to ___?","cuanto cuesta el boleto a.mp3"],
+["¿A qué hora sale el autobús?","What time does the bus leave?","a que hora sale el autobus.mp3"],
+["¿De qué andén sale?","Which platform does it leave from?"],
+["¿Este autobús va a ___?","Does this bus go to ___?"],
+["Necesito un taxi.","I need a taxi."],
+["¿Cuánto cuesta el taxi al centro?","How much is the taxi downtown?"],
+["Aquí, por favor.","Right here, please. (to stop)"],
+["Voy al aeropuerto.","I'm going to the airport."]]},
+{id:"direcciones",n:"Direcciones",e:"🧭",c:"#2E9E6B",p:[
+["¿Dónde está el baño?","Where is the bathroom?"],
+["¿Dónde está el hotel / el banco / la farmacia?","Where is the hotel / bank / pharmacy?"],
+["¿Está cerca o lejos?","Is it near or far?"],
+["A la derecha / A la izquierda / Todo recto","Right / Left / Straight ahead"],
+["Estoy perdido. / Estoy perdida.","I'm lost. (he / she)"],
+["¿Puede mostrarme en el mapa?","Can you show me on the map?"]]},
+{id:"hotel",n:"Hotel",e:"🛏",c:"#E8590C",p:[
+["Tengo una reserva.","I have a reservation."],
+["Quiero una habitación para dos personas.","I want a room for two people."],
+["¿Cuánto cuesta por noche?","How much per night?"],["¿Hay wifi?","Is there wifi?"],
+["¿A qué hora es el desayuno?","What time is breakfast?"],
+["La habitación no tiene agua caliente.","The room has no hot water."],
+["Necesito una toalla / otra almohada.","I need a towel / another pillow."],
+["La cuenta, por favor.","The bill, please."]]},
+{id:"comer",n:"Comer y beber",e:"🍽️",c:"#D6336C",p:[
+["Una mesa para dos, por favor.","A table for two, please."],
+["La carta, por favor.","The menu, please."],
+["Quiero ___. / Queremos ___.","I want ___ / We want ___."],
+["Para mí ___, y para ella ___.","For me ___, and for her ___."],
+["Un agua sin gas / con gas.","Still / sparkling water."],
+["Una cerveza, por favor.","A beer, please."],
+["¿Qué recomienda?","What do you recommend?"],
+["Soy alérgico a ___. / Ella es alérgica a ___.","I'm / She's allergic to ___."],
+["No como carne.","I don't eat meat."],
+["¿Es picante? 🌶️","Is it spicy? (key in Mexico)"],
+["Sin picante, por favor.","Not spicy, please."],
+["Está muy rico.","It's delicious."],
+["¿La propina está incluida?","Is the tip included?"],
+["La cuenta, por favor.","The check, please."]]},
+{id:"compras",n:"Compras",e:"🛍️",c:"#0E9AA7",p:[
+["¿Cuánto es?","How much is it?"],["Quiero esto.","I want this."],
+["Solo miro, gracias.","I'm just looking, thanks."],
+["¿Tiene una talla más grande / más pequeña?","Do you have a bigger / smaller size?"],
+["¿Tiene otro color?","Do you have another color?"]]},
+{id:"salud",n:"Emergencias",e:"🚑",c:"#D62828",p:[
+["Necesito ayuda.","I need help."],["Es una emergencia.","It's an emergency."],
+["Llame a la policía, por favor.","Call the police, please."],
+["Necesito un médico.","I need a doctor."],
+["Me duele la cabeza / el estómago.","My head / stomach hurts."],
+["Mi novia está enferma.","My girlfriend is sick."],
+["Tengo fiebre.","I have a fever."],
+["¿Dónde está la farmacia?","Where is the pharmacy?"],
+["No tengo mi pasaporte.","I don't have my passport."],
+["Tengo mal de altura.","I have altitude sickness. (La Paz, Cusco, Quito, Sucre, Bogotá. Try mate de coca.)"]]},
+{id:"charla",n:"Charla",e:"💬",c:"#3D5AFE",p:[
+["Me gusta mucho tu ciudad.","I really like your city."],
+["¿Qué recomienda para hacer aquí?","What do you recommend doing here?"],
+["¿Dónde hay un buen restaurante?","Where is a good restaurant?"],
+["¿Es seguro aquí?","Is it safe here?"],
+["¿Puede sacarnos una foto?","Can you take a photo of us?"]]},
+{id:"paises",n:"Por país",e:"🌎",c:"#2E9E6B",note:"Si dices <b>autobús</b>, todos te entienden. Estas palabras las vas a <b>escuchar</b>:",p:[
+["🇲🇽 ¿Mande? · Ahorita · Chido · Camión","México: Pardon? · Soon-ish · Cool · Bus"],
+["🇦🇷 Vos sos · Che · Colectivo","Argentina: You are · Hey, friend · Bus"],
+["🇨🇴 Con gusto · Parce · Chévere","Colombia: You're welcome · Buddy · Great"],
+["🇵🇪 Causa · Bacán · Combi","Perú: Friend · Great · Minibus"],
+["🇨🇱 ¿Cachái? · Bacán · Micro","Chile: You get it? · Great · Bus"],
+["🇧🇴 Micro · Trufi","Bolivia: Bus · Shared taxi"]]}
+];
+
+const $=s=>document.querySelector(s),list=$("#list"),chips=$("#chips"),q=$("#q"),speedBtn=$("#speedBtn");
+let cat="todo",voice=null,last=null,currentAudio=null;
+let playbackSpeed = 1.0;
+
+const norm=s=>s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+const spk='<svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
+
+// Conmutar velocidad entre 1.0x (normal) y 0.75x (lento)
+speedBtn.onclick = () => {
+  playbackSpeed = playbackSpeed === 1.0 ? 0.75 : 1.0;
+  speedBtn.textContent = playbackSpeed === 1.0 ? "⚡ 1.0x" : "🐢 0.75x";
+};
+
+function pickVoice(){const v=speechSynthesis.getVoices();voice=v.find(x=>x.lang==="es-MX")||v.find(x=>x.lang==="es-US")||v.find(x=>x.lang.startsWith("es"))||null}
+if("speechSynthesis" in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice}
+
+function say(t, file, btn){
+ if(currentAudio){
+   currentAudio.pause();
+   currentAudio.currentTime = 0;
+ }
+ if(last) last.classList.remove("on");
+
+ // Si existe archivo MP3 grabado
+ if(file){
+   const audio = new Audio(file);
+   audio.playbackRate = playbackSpeed; // Aplica la velocidad seleccionada
+   currentAudio = audio;
+   btn.classList.add("on");
+   last = btn;
+   audio.play().catch(e => console.error("Error reproduciendo archivo de audio:", e));
+   audio.onended = () => { btn.classList.remove("on"); currentAudio = null; };
+   return;
+ }
+
+ // Síntesis de voz de respaldo
+ if(!("speechSynthesis" in window)) return;
+ speechSynthesis.cancel();
+ const first = t.replace(/🌶️|🇲🇽|🇦🇷|🇨🇴|🇵🇪|🇨🇱|🇧🇴/g,"").split(" / ")[0].replace(/___/g,"").trim();
+ const u = new SpeechSynthesisUtterance(first);
+ u.lang = voice ? voice.lang : "es-MX";
+ if(voice) u.voice = voice;
+ u.rate = 0.85 * playbackSpeed; // Ajusta el ritmo según la velocidad elegida
+ btn.classList.add("on");
+ last = btn;
+ u.onend = () => btn.classList.remove("on");
+ speechSynthesis.speak(u);
+}
+
+function chipRow(){
+ chips.innerHTML="";
+ [{id:"todo",n:"Todo",e:"✨",c:"#1A1F3A"},...D].forEach(d=>{
+  const b=document.createElement("button");b.className="chip";b.textContent=d.e+" "+d.n;
+  b.style.setProperty("--c",d.c);b.setAttribute("aria-pressed",d.id===cat);
+  b.onclick=()=>{cat=d.id;render();chipRow();window.scrollTo({top:0,behavior:"smooth"})};
+  chips.appendChild(b);
+ });
+}
+
+function render(){
+ const s=norm(q.value.trim());list.innerHTML="";let n=0;
+ D.filter(d=>cat==="todo"||d.id===cat).forEach(d=>{
+  const ps=d.p.filter(p=>!s||norm(p[0]+" "+p[1]).includes(s));
+  if(!ps.length)return;
+  const sec=document.createElement("section");sec.style.setProperty("--c",d.c);
+  sec.innerHTML=`<h2><span class="dot">${d.e}</span>${d.n}</h2>`+(d.note&&!s?`<p class="note">${d.note}</p>`:"");
+  ps.forEach(p=>{n++;
+   const b=document.createElement("button");b.className="ph";
+   b.innerHTML=`<span class="t"><span class="es">${p[0]}</span><span class="en">${p[1]}</span></span>${spk}`;
+   b.onclick=()=>say(p[0], p[2], b);
+   sec.appendChild(b);
+  });
+  list.appendChild(sec);
+ });
+ if(!n)list.innerHTML='<p class="empty">No hay resultados. Prueba otra palabra, por ejemplo "taxi" o "cuenta".</p>';
+}
+
+q.addEventListener("input",render);
+chipRow();render();
+</script>
+</body>
+</html>
