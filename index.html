@@ -132,7 +132,8 @@ const D=[
 {id:"hotel",n:"Hotel",e:"🛏",c:"#E8590C",p:[
 ["Tengo una reserva.","I have a reservation.", "tengo una reserva.mp3"],
 ["Quiero una habitación para dos personas.","I want a room for two people.", "quiero una habitacion para dos personas.mp3"],
-["¿Cuánto cuesta por noche?","How much per night?"],["¿Hay wifi?","Is there wifi?", "cuanto cuesta por noche.mp3", "hay wifi.mp3"],
+["¿Cuánto cuesta por noche?","How much per night?", "cuanto cuesta por noche.mp3"],
+["¿Hay wifi?","Is there wifi?", "hay wifi.mp3"],
 ["¿A qué hora es el desayuno?","What time is breakfast?", "a que hora es el desayuno.mp3"],
 ["La habitación no tiene agua caliente.","The room has no hot water.", "la habitacion no tiene agua caliente.mp3"],
 ["Necesito una toalla / otra almohada.","I need a towel / another pillow.", "necesito una toalla, otra almohada.mp3"],
@@ -189,7 +190,6 @@ let playbackSpeed = 1.0;
 const norm=s=>s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
 const spk='<svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
 
-// Conmutar velocidad entre 1.0x (normal) y 0.75x (lento)
 speedBtn.onclick = () => {
   playbackSpeed = playbackSpeed === 1.0 ? 0.75 : 1.0;
   speedBtn.textContent = playbackSpeed === 1.0 ? "⚡ 1.0x" : "🐢 0.75x";
@@ -205,10 +205,9 @@ function say(t, file, btn){
  }
  if(last) last.classList.remove("on");
 
- // Si existe archivo MP3 grabado
  if(file){
    const audio = new Audio(file);
-   audio.playbackRate = playbackSpeed; // Aplica la velocidad seleccionada
+   audio.playbackRate = playbackSpeed;
    currentAudio = audio;
    btn.classList.add("on");
    last = btn;
@@ -217,14 +216,13 @@ function say(t, file, btn){
    return;
  }
 
- // Síntesis de voz de respaldo
  if(!("speechSynthesis" in window)) return;
  speechSynthesis.cancel();
  const first = t.replace(/🌶️|🇲🇽|🇦🇷|🇨🇴|🇵🇪|🇨🇱|🇧🇴/g,"").split(" / ")[0].replace(/___/g,"").trim();
  const u = new SpeechSynthesisUtterance(first);
  u.lang = voice ? voice.lang : "es-MX";
  if(voice) u.voice = voice;
- u.rate = 0.85 * playbackSpeed; // Ajusta el ritmo según la velocidad elegida
+ u.rate = 0.85 * playbackSpeed;
  btn.classList.add("on");
  last = btn;
  u.onend = () => btn.classList.remove("on");
@@ -243,7 +241,7 @@ function chipRow(){
 
 function render(){
  const s=norm(q.value.trim());list.innerHTML="";let n=0;
- D.filter(d=>cat==="todo"||d.id===cat).forEach(d=>{
+ D.filter(d=>cat==="todo"||d.id==="cat").forEach(d=>{
   const ps=d.p.filter(p=>!s||norm(p[0]+" "+p[1]).includes(s));
   if(!ps.length)return;
   const sec=document.createElement("section");sec.style.setProperty("--c",d.c);
