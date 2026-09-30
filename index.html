@@ -241,7 +241,7 @@ function chipRow(){
 
 function render(){
  const s=norm(q.value.trim());list.innerHTML="";let n=0;
- D.filter(d=>cat==="todo"||d.id==="cat").forEach(d=>{
+ D.filter(d=>cat==="todo"||d.id===cat).forEach(d=>{
   const ps=d.p.filter(p=>!s||norm(p[0]+" "+p[1]).includes(s));
   if(!ps.length)return;
   const sec=document.createElement("section");sec.style.setProperty("--c",d.c);
